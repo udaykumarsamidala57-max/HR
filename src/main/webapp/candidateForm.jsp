@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidate Recruitment - Sandur Residential School</title>
+    <title>Teacher Recruitment - Sandur Residential School</title>
     <style>
         :root {
             --brand-dark: #1a2a47; /* Dark Blue from image */
