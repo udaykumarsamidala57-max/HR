@@ -221,6 +221,7 @@
                     <option value="Administrator">English Teacher</option>
                     <option value="Support Staff">Social Teacher</option>
                     <option value="Warden">Physics Teacher</option>
+                    <option value="Warden">Chemistry Teacher</option>
                     <option value="Warden">Geography Teacher</option>
                     <option value="Warden">Computer Science Teacher</option>
                 </select>
