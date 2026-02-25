@@ -225,10 +225,7 @@
                     <option value="Warden">Computer Science Teacher</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label>Resume No</label>
-                <input type="text" name="resume_no">
-            </div>
+          
             <div class="form-group">
                 <label>Marital Status</label>
                 <select name="marital_status">

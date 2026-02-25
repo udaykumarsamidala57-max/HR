@@ -22,7 +22,7 @@ public class CandidateServlet extends HttpServlet {
         try (Connection con = DBUtil.getConnection()) {
 
             String sql = "INSERT INTO candidate_recruitment "
-                    + "(resume_no, name, mobile_no, address, post_applied_for, gender, date_of_birth, "
+                    + "( name, mobile_no, address, post_applied_for, gender, date_of_birth, "
                     + "marital_status, qualification, specialization, percentage_marks, year_of_passing, "
                     + "reference_by, other_skills_certifications, experience, relevant_experience, "
                     + "total_experience, present_salary, expected_salary, remarks) "
@@ -30,26 +30,26 @@ public class CandidateServlet extends HttpServlet {
 
             PreparedStatement ps = con.prepareStatement(sql);
 
-            ps.setString(1, request.getParameter("resume_no"));
-            ps.setString(2, request.getParameter("name"));
-            ps.setString(3, request.getParameter("mobile_no"));
-            ps.setString(4, request.getParameter("address"));
-            ps.setString(5, request.getParameter("post_applied_for"));
-            ps.setString(6, request.getParameter("gender"));
-            ps.setString(7, request.getParameter("date_of_birth"));
-            ps.setString(8, request.getParameter("marital_status"));
-            ps.setString(9, request.getParameter("qualification"));
-            ps.setString(10, request.getParameter("specialization"));
-            ps.setString(11, request.getParameter("percentage_marks"));
-            ps.setString(12, request.getParameter("year_of_passing"));
-            ps.setString(13, request.getParameter("reference_by"));
-            ps.setString(14, request.getParameter("other_skills_certifications"));
-            ps.setString(15, request.getParameter("experience"));
-            ps.setString(16, request.getParameter("relevant_experience"));
-            ps.setString(17, request.getParameter("total_experience"));
-            ps.setString(18, request.getParameter("present_salary"));
-            ps.setString(19, request.getParameter("expected_salary"));
-            ps.setString(20, request.getParameter("remarks"));
+           
+            ps.setString(1, request.getParameter("name"));
+            ps.setString(2, request.getParameter("mobile_no"));
+            ps.setString(3, request.getParameter("address"));
+            ps.setString(4, request.getParameter("post_applied_for"));
+            ps.setString(5, request.getParameter("gender"));
+            ps.setString(6, request.getParameter("date_of_birth"));
+            ps.setString(7, request.getParameter("marital_status"));
+            ps.setString(8, request.getParameter("qualification"));
+            ps.setString(9, request.getParameter("specialization"));
+            ps.setString(10, request.getParameter("percentage_marks"));
+            ps.setString(11, request.getParameter("year_of_passing"));
+            ps.setString(12, request.getParameter("reference_by"));
+            ps.setString(13, request.getParameter("other_skills_certifications"));
+            ps.setString(14, request.getParameter("experience"));
+            ps.setString(15, request.getParameter("relevant_experience"));
+            ps.setString(16, request.getParameter("total_experience"));
+            ps.setString(17, request.getParameter("present_salary"));
+            ps.setString(18, request.getParameter("expected_salary"));
+            ps.setString(19, request.getParameter("remarks"));
 
             ps.executeUpdate();
             message = "✅ Candidate data saved successfully";
