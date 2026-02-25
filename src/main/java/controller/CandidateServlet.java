@@ -26,7 +26,7 @@ public class CandidateServlet extends HttpServlet {
                     + "marital_status, qualification, specialization, percentage_marks, year_of_passing, "
                     + "reference_by, other_skills_certifications, experience, relevant_experience, "
                     + "total_experience, present_salary, expected_salary, remarks) "
-                    + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                    + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
             PreparedStatement ps = con.prepareStatement(sql);
 
