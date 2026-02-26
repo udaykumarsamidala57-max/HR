@@ -220,6 +220,7 @@
                     <option value="Teacher">Mathematics Teacher</option>
                     <option value="Administrator">English Teacher</option>
                     <option value="Support Staff">Social Teacher</option>
+                    <option value="Support Staff">Biology Teacher</option>
                     <option value="Warden">Physics Teacher</option>
                     <option value="Warden">Chemistry Teacher</option>
                     <option value="Warden">Geography Teacher</option>
