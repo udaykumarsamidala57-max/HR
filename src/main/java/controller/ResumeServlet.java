@@ -27,6 +27,7 @@ public class ResumeServlet extends HttpServlet {
         try (Connection con = DBUtil.getConnection();
              PreparedStatement ps = con.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
+        	
             
             java.sql.ResultSetMetaData metaData = rs.getMetaData();
             int columnCount = metaData.getColumnCount();
